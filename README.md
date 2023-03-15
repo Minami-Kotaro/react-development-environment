@@ -21,4 +21,14 @@ $ npm create vite {project-name} --template=react-ts
 |vite.config.ts|Vite の設定ファイル。|
 |gitignore|Git リポジトリに含めないものリスト。|
 
+<br>
+
+vite のデフォルト環境では Typescript の<code>baseUrl</code>の設定が聞かないため、プラグインを追加する必要がある。
+
+```sh
+$ npm i -D vite-tsconfig-paths
+```
+
+vite.config.ts に読み込む設定を追加する。
+
 ## 2.リンターとフォーマッターの導入
